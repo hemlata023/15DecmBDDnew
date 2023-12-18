@@ -1,11 +1,10 @@
 package runners;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
-
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-		features ="src//test//resources//features//UserLogin.feature",
+		features ="src//test//resources//taggedFeatures//",
 		glue=("stepDefs"),
 		monochrome=true,
 		plugin= {"pretty"}
@@ -15,6 +14,7 @@ import io.cucumber.testng.CucumberOptions;
 		        // "rerun:target//failedScenarios.txt"
 		
 		)
-public class GooglePageRunner extends AbstractTestNGCucumberTests{
+public class CRMRunner extends AbstractTestNGCucumberTests{
 	
 }
+
